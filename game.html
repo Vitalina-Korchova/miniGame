@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./game.css">
+    <title>Game</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="settings" class="settings">
+            <p>Налаштування гри</p>
+            <div id="parameters" class="parameters">
+                <p>Розмір поля</p>
+                <select id="sizeCards">
+                    <option value="value1">4x4</option>
+                    <option value="value2">6x6</option>
+                </select>
+                <p>Складність</p>
+                <select id="mode">
+                    <option value="value1">easy</option>
+                    <option value="value2">normal</option>
+                    <option value="value3">hard</option>
+                </select>
+            </div>
+            <div id="buttons" class="buttons">
+                <button id="startGameButton" type="button">Почати гру</button>
+                <button id="newGameButton" type="button">Нова гра</button>
+            </div>
+        </div>
+        <div id="cardsContainer" class="cardsContainer">
+            <div id="timer" class="timer"></div>
+            <div id="cards" class="cards">
+                <div id="cards4x4" class="cards4x4"></div>
+                <div id="cards6x6" class="cards6x6"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./game.js"></script>
+</body>
+</html>
